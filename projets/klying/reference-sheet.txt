@@ -1,0 +1,123 @@
+REFERENCE SHEET — WHO'S LYING DATASET DESIGN
+
+This file explains how to interpret and generate question pairs for the JSON dataset.
+
+It is NOT an output format. It is only guidance.
+
+---
+
+## 1. CORE IDEA
+
+Each entry is a pair of questions:
+
+["Question A", "Question B"]
+
+They are designed to feel comparable but create different reasoning paths.
+
+Players must not easily detect which question is “correct” or “opposite”.
+
+---
+
+## 2. HOW TO READ A PAIR
+
+A pair is NOT:
+- a direct opposite
+- a paraphrase
+- a logical inversion
+
+A pair IS:
+- two different perspectives on similar human behavior
+- two different ways of measuring similar intent or experience
+- two prompts that can produce diverging answers under pressure
+
+---
+
+## 3. TYPES OF PAIRS
+
+### A. Closely related (same domain, different angle)
+
+Meaning:
+Same topic, different internal reasoning.
+
+Example:
+["What is your maximum weight you can lift?", "What is the lightest object you struggle to carry?"]
+
+Why it works:
+Both involve physical strength, but one is peak performance, the other is difficulty threshold.
+
+---
+
+### B. Loosely related (different context, similar scale)
+
+Meaning:
+Different situations, but comparable magnitude or intensity.
+
+Example:
+["How long can you focus without distraction?", "How long can you wait in a queue before getting impatient?"]
+
+Why it works:
+Both measure patience/endurance but in different environments.
+
+---
+
+### C. Unrelated but comparable (weak semantic link)
+
+Meaning:
+Different domains, but still similar “scale type” (time, effort, frequency, intensity).
+
+Example:
+["How many hours do you sleep on weekends?", "How many books do you read per year?"]
+
+Why it works:
+Both are measurable personal habits, but unrelated behaviors.
+
+---
+
+## 4. DESIGN RULES
+
+- Avoid obvious symmetry (do NOT mirror words directly)
+- Avoid making pairs that look like “good vs bad”
+- Avoid explicit unit matching (do not reveal pairing logic)
+- Avoid repetitive phrasing templates
+- Prefer natural human questions over structured survey language
+- Keep both questions believable independently
+
+---
+
+## 5. WHAT MAKES A GOOD PAIR
+
+A good pair:
+- feels like two normal questions someone might ask separately
+- produces answers that can be compared socially
+- creates uncertainty during discussion
+- does NOT obviously reveal which is “linked” to the other
+
+---
+
+## 6. WHAT TO AVOID
+
+Bad pair patterns:
+- exact opposites ("high speed" vs "low speed")
+- identical structure swaps ("How much X" vs "How little X")
+- obvious scaling pairs (1 hour vs 10 hours)
+- mirrored phrasing
+
+---
+
+## 7. LANGUAGE HANDLING
+
+- EN dataset: natural conversational English
+- FR dataset: natural conversational French (not literal translation of English structure)
+- Do not translate word-for-word; adapt culturally
+
+---
+
+## 8. FINAL GOAL
+
+The dataset should feel like:
+- real human psychology questions
+- not a structured survey
+- not a test
+- not a quiz
+
+It should create doubt, discussion, and social inference during gameplay.
